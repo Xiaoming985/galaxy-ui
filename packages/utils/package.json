@@ -1,0 +1,15 @@
+{
+  "name": "@galaxy-ui/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "xiaoming985",
+  "license": "ISC"
+}

@@ -1,0 +1,137 @@
+### 参考
+- https://github.com/huccct/tass-ui
+- https://www.404bugs.com/index.php/details/1076509603444609024
+- https://blog.csdn.net/qq_45225759/article/details/127889381
+- https://github.com/wei-design/web-vue/blob/feature/major-dev/start.md
+- https://www.bilibili.com/video/BV16S4y1P7DZ/?spm_id_from=333.337.search-card.all.click&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
+- https://www.bilibili.com/video/BV1aT4y1z7Qo/?spm_id_from=333.788&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
+
+### 安装pnpm
+```
+npm install -g pnpm
+```
+
+### 初始化项目
+```
+mkdir galaxy-ui
+cd galaxy-ui
+pnpm init # @galaxy-ui 为组织名，发布npm包时，需要新建一个组织
+```
+
+### 新建.npmrc文件
+
+### 新建pnpm-workspace.yaml文件
+
+### 新建packages、docs、examples目录
+
+### 进入examples目录，手动搭建一个vite项目
+```
+pnpm init
+pnpm install vue@next typescript sass -D -w
+pnpm install vite @vitejs/plugin-vue vue-tsc -D
+添加启动脚本 "script": {"dev": "vite"}
+# 开发环境中的依赖一般全部安装在整个项目根目录下，方便每个包都可以引用，所以在安装的时候需要加个 -w
+# 当然，也可以使用pnpm create vite构建
+
+# 另外，在项目的根目录，即跟examples目录的平级的package.json中的添加启动脚本 "script": {"dev": "pnpm -C examples dev"}，这样就可以在根目录下启动examples工程了
+```
+
+### 根目录下新建tsconfig.json
+
+### packages目录下新建utils目录
+```
+pnpm init
+```
+
+### packages目录下新建components目录
+```
+pnpm init
+pnpm install @galaxy-ui/utils 
+# 在components中引入utils，执行完成后会看到"dependencies": {"@galaxy-ui/utils": "workspace:^1.0.0"}
+# 自动构建了软链接指向了utils目录，注意组织名（@galaxy-ui）不重复，否则可能会从npm库中下了一个同名的包
+```
+
+### 使用vite打包components
+```ts
+// components/vite.config.ts
+import { defineConfig } from "vite"
+import vue from "@vitejs/plugin-vue"
+import dts from "vite-plugin-dts"
+import { resolve } from "path"
+
+export default defineConfig(
+  {
+    build: {
+      target: 'modules',
+      //打包文件目录
+      outDir: "es",
+      //压缩
+      minify: false,
+      //css分离
+      //cssCodeSplit: true,
+      rollupOptions: {
+        //忽略打包vue文件
+        external: ['vue'],
+        input: ['index.ts'],
+        output: [
+          {
+            format: 'es',
+            //不用打包成.es.js,这里我们想把它打包成.js
+            entryFileNames: '[name].js',
+            //让打包目录和我们目录对应
+            preserveModules: true,
+            //配置打包根目录
+            dir: resolve(__dirname, '../../build/es'), // 'es'
+            preserveModulesRoot: 'src'
+          },
+          {
+            format: 'cjs',
+            entryFileNames: '[name].js',
+            //让打包目录和我们目录对应
+            preserveModules: true,
+            //配置打包根目录
+            dir: resolve(__dirname, '../../build/lib'), // 'lib'
+            preserveModulesRoot: 'src'
+          }
+        ]
+      },
+      lib: {
+        entry: './index.ts',
+        formats: ['es', 'cjs'],
+        name: 'galaxy-ui'
+      }
+    },
+    plugins: [
+      vue(),
+      dts({
+        // 指定使用的 tsconfig.json，如果不配置也可以在 components 下新建 tsconfig.json
+        tsConfigFilePath: '../../tsconfig.json',
+        // 因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
+        outputDir: [ // outputDir: 'lib'
+          resolve(__dirname, '../../build/es/components'),
+          resolve(__dirname, '../../build/lib/components')
+        ]
+      })
+    ],
+    resolve: {
+      alias: {
+        '@': resolve(__dirname, 'components')
+      }
+    }
+  }
+)
+```
+
+### package.json说明
+```json
+{
+  // ...
+  "main": "lib/index.js",
+  "module": "es/index.js", // # module：组件库默认入口文件是传统的 CommonJS 模块，但是如果环境支持 ESModule 的话构建工具会优先使用 module 入口
+  "files": [ // files：files 是指需要发布到 npm 上的目录，因为不可能 components 下的所有目录都被发布上去
+    "es",
+    "lib"
+  ],
+  // ...
+}
+```

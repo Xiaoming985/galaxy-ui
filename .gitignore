@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+dist/
+**/*.log
+
+yarn.lock
+package-lock.json
+
+# packages/components 打包输出的内容
+build/
+
+# packages/utils 打包输出的内容
+packages/utils/dist
+
+# Editor directories and files
+.idea
+.vscode

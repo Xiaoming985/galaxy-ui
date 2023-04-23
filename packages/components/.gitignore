@@ -1,0 +1,4 @@
+# ./package.json { "files": ["es", "lib"] } 可以指定上传至npm的目录
+# ./vite.config.js 打包，可以指定打包的输出目录
+/lib
+/es

@@ -1,0 +1,13 @@
+{
+  "name": "@galaxy-ui/examples",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "xiaoming985",
+  "license": "ISC"
+}
