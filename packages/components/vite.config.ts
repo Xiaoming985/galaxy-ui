@@ -25,8 +25,8 @@ export default defineConfig(
             //让打包目录和我们目录对应
             preserveModules: true,
             //配置打包根目录
-            // dir: resolve(__dirname, '../../build/es'),
-            dir: resolve(__dirname, '/es'),
+            dir: resolve(__dirname, '../../build/es'),
+            // dir: 'es', // 对应方式一
             preserveModulesRoot: 'src'
           },
           {
@@ -35,8 +35,8 @@ export default defineConfig(
             //让打包目录和我们目录对应
             preserveModules: true,
             //配置打包根目录
-            // dir: resolve(__dirname, '../../build/lib'),
-            dir: resolve(__dirname, 'lib'),
+            dir: resolve(__dirname, '../../build/lib'),
+            // dir: 'lib', // 对应方式一
             preserveModulesRoot: 'src'
           }
         ]
@@ -50,11 +50,22 @@ export default defineConfig(
     plugins: [
       vue(),
       // 不配置dts，打包出来的项目只能在js中使用，在ts项目中使用会报错
+
+      // 方式一：
+      // dts({
+      //   tsConfigFilePath: '../../tsconfig.json',
+      // }),
+      // dts({
+      //   // 指定使用的 tsconfig.json，如果不配置也可以在 components 下新建 tsconfig.json
+      //   tsConfigFilePath: '../../tsconfig.json',
+      //   // 因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
+      //   outputDir: 'lib'
+      // })
+
+      // 方式二：
       dts({
         // 指定使用的 tsconfig.json，如果不配置也可以在 components 下新建 tsconfig.json
         tsConfigFilePath: '../../tsconfig.json',
-        // 因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
-        // outputDir: 'lib'
         outputDir: [
           resolve(__dirname, '../../build/es/components'),
           resolve(__dirname, '../../build/lib/components')
