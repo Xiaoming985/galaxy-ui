@@ -5,14 +5,22 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -C examples dev",
-    "build:components": "pnpm --filter components build"
+    "build:components": "pnpm --filter components build",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
   },
   "keywords": [],
   "author": "xiaoming985",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.13",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
     "@vitejs/plugin-vue": "^4.1.0",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.11.0",
+    "prettier": "^2.8.8",
     "sass": "^1.62.0",
     "typescript": "^5.0.4",
     "vite": "^4.2.2",

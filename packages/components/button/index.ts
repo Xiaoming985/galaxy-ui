@@ -1,6 +1,6 @@
-import button from './src/button.vue';
+import button from "./src/button.vue";
 
-import { withInstall } from '@galaxy-ui/utils/withInstall';
+import { withInstall } from "@galaxy-ui/utils/withInstall";
 
 export const GaButton = withInstall(button);
 

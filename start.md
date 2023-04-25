@@ -135,3 +135,68 @@ export default defineConfig(
   // ...
 }
 ```
+
+### 配置eslint
+```
+pnpm i eslint eslint-plugin-vue @typescript-eslint/parser @typescript-eslint/eslint-plugin -D -w
+```
+- eslint: ESLint 的核心代码。
+- eslint-plugin-vue：包含常用的 vue 规范。
+- @typescript-eslint/parser：ESLint 的解析器，用于解析 typescript，从而检查和规范 Typescript 代码。
+- @typescript-eslint/eslint-plugin：包含了各类定义好的检测 Typescript 代码的规范。
+- eslint-plugin-import：意在提供对ES6+ import/export语法的支持，有助于防止你写错文件路径或者引用的变量名
+- 根目录package.json添加script脚本："lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix"
+  
+#### 新建.eslintrc.js
+```js
+// 也可以使用pnpm eslint --init生成，生成的文件跟以下配置差不多，稍作修改即可
+module.exports = {
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-types": [
+      "error",
+    {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ]
+  }
+}
+```
+
+#### 新建.eslintignore
+```
+node_modules
+dist
+pnpm-lock.yaml
+.eslintrc.js
+```
+
+### 配置prettier
+```
+pnpm i prettier eslint-plugin-prettier eslint-config-prettier -D -w
+```

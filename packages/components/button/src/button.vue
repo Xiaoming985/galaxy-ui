@@ -4,6 +4,6 @@
 
 <script lang="ts">
 export default {
-  name: 'GaButton'
-}
+  name: "GaButton",
+};
 </script>
