@@ -1,10 +1,13 @@
 ### 参考
-- https://github.com/huccct/tass-ui
-- https://www.404bugs.com/index.php/details/1076509603444609024
-- https://blog.csdn.net/qq_45225759/article/details/127889381
-- https://github.com/wei-design/web-vue/blob/feature/major-dev/start.md
-- https://www.bilibili.com/video/BV16S4y1P7DZ/?spm_id_from=333.337.search-card.all.click&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
-- https://www.bilibili.com/video/BV1aT4y1z7Qo/?spm_id_from=333.788&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
+- monorepo + pnpm + vite + vue + ts 搭建UI组件库：
+  - https://github.com/huccct/tass-ui
+  - https://www.404bugs.com/index.php/details/1076509603444609024
+  - https://blog.csdn.net/qq_45225759/article/details/127889381
+  - https://github.com/wei-design/web-vue/blob/feature/major-dev/start.md
+  - https://www.bilibili.com/video/BV16S4y1P7DZ/?spm_id_from=333.337.search-card.all.click&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
+  - https://www.bilibili.com/video/BV1aT4y1z7Qo/?spm_id_from=333.788&vd_source=e6e19c70d43e7c7a7d1579a12601c7e7
+- 配置eslint + prettier：
+  - https://blog.csdn.net/long_cheng_lv/article/details/126690741
 
 ### 安装pnpm
 ```
@@ -160,21 +163,21 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-essential",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended" // 安装prettier后，新增
   ],
   "overrides": [
   ],
-  "parser": "vue-eslint-parser",
+  "parser": "vue-eslint-parser", // 新增/修改，原 => "parser": "@typescript-eslint/parser"
   "parserOptions": {
     "ecmaVersion": "latest",
-    "parser": "@typescript-eslint/parser",
+    "parser": "@typescript-eslint/parser", // 新增
     "sourceType": "module"
   },
   "plugins": [
     "vue",
     "@typescript-eslint"
   ],
-  "rules": {
+  "rules": { // 新增
     "@typescript-eslint/ban-types": [
       "error",
     {
@@ -200,3 +203,41 @@ pnpm-lock.yaml
 ```
 pnpm i prettier eslint-plugin-prettier eslint-config-prettier -D -w
 ```
+
+### VitePress 文档
+- Node.js >= 16
+- 安装
+```
+pnpm install vitepress -D -w
+```
+- 初始化
+```
+npx vitepress init
+```
+```
+  vitepress v1.0.0-alpha.74
+
+┌   Welcome to VitePress! 
+│
+◇  Where should VitePress initialize the config?
+│  ./docs
+│
+◇  Site title:
+│  Galaxy-UI
+│
+◇  Site description:
+│  vue3组件库
+│
+◇  Theme:
+│  Default Theme
+│
+◇  Use TypeScript for config and theme files?
+│  Yes
+│
+◇  Add VitePress npm scripts to package.json?
+│  Yes
+│
+└  Done! Now run npm run docs:dev and start writing.
+```
+
+
