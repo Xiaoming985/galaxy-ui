@@ -4,9 +4,9 @@
     border-radius: 5px;
     padding: 20px;
   }
-  .ga-button {
+  /* .ga-button {
     margin:10px 5px;
-  }
+  } */
   details > summary:first-of-type {
     font-size: 10px;
     padding: 8px 0;
@@ -18,9 +18,14 @@
 常用的操作按钮。
 ## 基础用法
 <div class="example">
-    <div>
-        <ga-button>默认按钮</ga-button>
-    </div>
+  <div>
+    <ga-button>默认按钮</ga-button>
+    <ga-button type="primary">主要按钮</ga-button>
+    <ga-button type="success">成功按钮</ga-button>
+    <ga-button type="info">信息按钮</ga-button>
+    <ga-button type="warning">警告按钮</ga-button>
+    <ga-button type="danger">危险按钮</ga-button>
+  </div>
 </div>
 
 <details>
@@ -30,6 +35,11 @@
 <template>
   <div>
     <ga-button>默认按钮</ga-button>
+    <ga-button type="primary">主要按钮</ga-button>
+    <ga-button type="success">成功按钮</ga-button>
+    <ga-button type="info">信息按钮</ga-button>
+    <ga-button type="warning">警告按钮</ga-button>
+    <ga-button type="danger">危险按钮</ga-button>
   </div>
 </template>
 
