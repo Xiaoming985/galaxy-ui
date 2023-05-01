@@ -18,9 +18,9 @@ app.use(GalaxyUI).mount('#app');
 ```ts
 // main.ts or main.js
 import { createApp } from "vue";
-import "./style.css";
 import App from "./App.vue";
-import { GaButton } from "@galaxy-ui/components";
+import { GaButton } from "galaxy-ui";
+import 'galaxy-ui/es/style.css';
 
 const app = createApp(App);
 app.use(GaButton).mount('#app');

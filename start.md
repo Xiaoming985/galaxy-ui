@@ -250,4 +250,8 @@ npx vitepress init
 - 新建packages/theme-chalk目录
 - 在packages/theme-chalk下执行：pnpm init
 - 修改该目录下的package.json         =>        "name": "@galaxy-ui/theme-chalk"
+
 ### 编写组件
+
+
+### 发布npm包
