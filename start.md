@@ -44,11 +44,14 @@ pnpm install vite @vitejs/plugin-vue vue-tsc -D
 ### packages目录下新建utils目录
 ```
 pnpm init
+# 执行完成后，修改该目录下的package.json        =>       "name": "@galaxy-ui/utils"
 ```
 
 ### packages目录下新建components目录
 ```
 pnpm init
+# 执行完成后，修改该目录下的package.json        =>       "name": "@galaxy-ui/components"
+
 pnpm install @galaxy-ui/utils 
 # 在components中引入utils，执行完成后会看到"dependencies": {"@galaxy-ui/utils": "workspace:^1.0.0"}
 # 自动构建了软链接指向了utils目录，注意组织名（@galaxy-ui）不重复，否则可能会从npm库中下了一个同名的包
@@ -240,4 +243,11 @@ npx vitepress init
 └  Done! Now run npm run docs:dev and start writing.
 ```
 
+### iconfont制作
+- iconfont-阿里巴巴矢量图标库：https://www.iconfont.cn/
 
+### theme-chalk
+- 新建packages/theme-chalk目录
+- 在packages/theme-chalk下执行：pnpm init
+- 修改该目录下的package.json         =>        "name": "@galaxy-ui/theme-chalk"
+### 编写组件
