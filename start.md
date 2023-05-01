@@ -1,5 +1,5 @@
 ### 参考
-- monorepo + pnpm + vite + vue + ts 搭建UI组件库：
+- monorepo + pnpm + vite + vue + ts + vitepress 搭建UI组件库：
   - https://github.com/huccct/tass-ui
   - https://www.404bugs.com/index.php/details/1076509603444609024
   - https://blog.csdn.net/qq_45225759/article/details/127889381

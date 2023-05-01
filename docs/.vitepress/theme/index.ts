@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
-// import '@galaxy-ui/theme-chalk/src/index.scss';
+import '@galaxy-ui/theme-chalk/src/index.scss';
 import GalaxyUI from '@galaxy-ui/components';
 
 export default {
