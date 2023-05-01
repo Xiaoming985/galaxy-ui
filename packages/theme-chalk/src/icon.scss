@@ -1,0 +1,30 @@
+@use 'mixins/mixins' as *;
+@use 'common/var' as *;
+
+@font-face {
+  font-family: "ga-icon"; /* Project id 2637025 */
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARkAAsAAAAACOAAAAQYAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDHAqFGIRhATYCJAMQCwoABCAFhFsHSBvdB8ieBY5bLskRKsyrKrSFx4+gGuL2/j+tV1XHR8WXDkYQCd0hFAiDUCAMwlTVJeMzlJtexSzcLKwWqLiFiiGXQPFwFQ+bw8zkZU9TyPwp+tvPGoAgwGwDFiv/+5/7+by4/mYPl+kWVRYRPNqZDauAhqPIH9FE/3xA/A/xGi7jNQK1lhVzPapu7ASBj+XYAGK501uDqDwea1g58OZsSgUhVBsrm55axBvgQXrq+gjw2vv7+Cc9vEkqMv0qx69SgbufpJ+PuPH/AfIXTouANidUIGN+YY64qfadcQsS89zUFsXcbQLkd9USP6Wfxj4f+T9WbEpXbeh0/cdLRCVdV49gXZsPTG7JIv0Y4hL8OmKTCK5sr0YL4CsAMQfQv6JaVtnQWF/fYDyiJ8bdvaKiLXzadgqAJ6ftZ11c7s/02KNkO92r2cI7t/ER27t8baf4035+z89az3TuiAgRXdubIhX1NXQ9w+k2atoy+ar1vexBre3VK97hsAuC1enstXUmxCbKdzkcqF0mCKiVdjqfOLDNFkk/8rU5XzitwkvB7njuAHxp13Z+OgQEs5hO/UHDW5XnfZJyCPlwR/jZheSuZPqs0BkefupeSwn1CH4uaMFl/hJ0ywpYGLDd0sU6S0+Kgtaw7O7YhbFr1UxkV/cvXCzGVuctOWs3y64hQkhT5pJOVqGMtYcQbVuI+K0lnqVla1shu1j1wtCY3eCjRFxKkmVNJlK6pFnsXqaZLC0lPVrUg+I+cv16sk88+AyJkTgUxzsPip8VfOHKH2eIMwOD41XJzaJHomZa1PSoGdJN8BFsSq5iBgbPEMC9rWCOmPtnXar/zwDRE9QTSnxMgXs+5+UMDuaYTbGLmHOGqvLIytib/f1d6OB0TGVTW2bFqtcLpG0SqnUYxOiKUrBoLzbkYNUsMAF4KN9wy2ZI5JLvU+Y7bgV/zibDnzYTQ0GFv6v9HtrQj9GHj7GyufzNy2XZfzJff4CHGxeilEertGSktLjkzb0WIwln9GNkaPVxCENb41JClbYIk6AXk2EEU2CaVqHOkqZShl1arTllZ9dpo+MmSg0mzSNaaPQOk+ADJsNHTIHPtAqdPmgqEfyn1TqZy+XqTIasgkNyjFRQMQk1SqOBMf2YlaeGpe2IHdXJOUHhEmnEWTQhmEZJM+kaZEBc+yMsY2w6xgxkOKMeVg9zN6TTGaGJM44gJabUGJvyJRKm6EcopVEPKnAQOQxRgRQmQRpKRgaMU4mx5FJl0XYIa5SuEVdcI5FLQzgWTopmg9JQpNWYGp2hSc0FHG0xhpUOwxgQg0uN9KDqJXkQHU4YQaZizwikJDCKukPMJJ/EaMQ01VHTGvQ3dgpq6U8tkSJHiQpVj41ylcbA+lmQnFOqUxmNTudpxzHiAAA=') format('woff2'),
+       url('iconfont.woff?t=1682971469924') format('woff'),
+       url('iconfont.ttf?t=1682971469924') format('truetype');
+}
+
+[class^='#{$namespace}-icon-'] {
+  font-family: "ga-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ga-icon-loading:before {
+  content: "\e676";
+}
+
+.ga-icon-search-fill:before {
+  content: "\e7a2";
+}
+
+.ga-icon-filter:before {
+  content: "\e630";
+}
