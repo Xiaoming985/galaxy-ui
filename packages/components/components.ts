@@ -1,2 +1,2 @@
-export { GaIcon } from "./icon";
-export { GaButton } from "./button";
+export { YamIcon } from "./icon";
+export { YamButton } from "./button";

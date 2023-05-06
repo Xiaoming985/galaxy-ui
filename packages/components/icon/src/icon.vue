@@ -4,7 +4,7 @@
 
 <script lang="ts">
 export default {
-  name: "GaIcon",
+  name: "YamIcon",
 };
 </script>
 

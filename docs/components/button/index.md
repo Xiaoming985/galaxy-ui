@@ -4,7 +4,7 @@
     border-radius: 5px;
     padding: 20px;
   }
-  /* .ga-button {
+  /* .yam-button {
     margin:10px 5px;
   } */
   details > summary:first-of-type {
@@ -19,12 +19,12 @@
 ## 基础用法
 <div class="example">
   <div>
-    <ga-button>默认按钮</ga-button>
-    <ga-button type="primary">主要按钮</ga-button>
-    <ga-button type="success">成功按钮</ga-button>
-    <ga-button type="info">信息按钮</ga-button>
-    <ga-button type="warning">警告按钮</ga-button>
-    <ga-button type="danger">危险按钮</ga-button>
+    <yam-button>默认按钮</yam-button>
+    <yam-button type="primary">主要按钮</yam-button>
+    <yam-button type="success">成功按钮</yam-button>
+    <yam-button type="info">信息按钮</yam-button>
+    <yam-button type="warning">警告按钮</yam-button>
+    <yam-button type="danger">危险按钮</yam-button>
   </div>
 </div>
 
@@ -34,12 +34,12 @@
 ```vue
 <template>
   <div>
-    <ga-button>默认按钮</ga-button>
-    <ga-button type="primary">主要按钮</ga-button>
-    <ga-button type="success">成功按钮</ga-button>
-    <ga-button type="info">信息按钮</ga-button>
-    <ga-button type="warning">警告按钮</ga-button>
-    <ga-button type="danger">危险按钮</ga-button>
+    <yam-button>默认按钮</yam-button>
+    <yam-button type="primary">主要按钮</yam-button>
+    <yam-button type="success">成功按钮</yam-button>
+    <yam-button type="info">信息按钮</yam-button>
+    <yam-button type="warning">警告按钮</yam-button>
+    <yam-button type="danger">危险按钮</yam-button>
   </div>
 </template>
 
