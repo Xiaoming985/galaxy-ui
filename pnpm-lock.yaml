@@ -4,8 +4,8 @@ importers:
 
   .:
     specifiers:
-      '@galaxy-ui/components': workspace:^1.0.0
-      '@galaxy-ui/theme-chalk': workspace:^1.0.0
+      '@yammy-ui/components': workspace:^1.0.0
+      '@yammy-ui/theme-chalk': workspace:^1.0.0
       '@types/node': ^18.15.13
       '@typescript-eslint/eslint-plugin': ^5.59.0
       '@typescript-eslint/parser': ^5.59.0
@@ -23,8 +23,8 @@ importers:
       vue: ^3.2.36
       vue-tsc: ^1.2.0
     dependencies:
-      '@galaxy-ui/components': link:packages/components
-      '@galaxy-ui/theme-chalk': link:packages/theme-chalk
+      '@yammy-ui/components': link:packages/components
+      '@yammy-ui/theme-chalk': link:packages/theme-chalk
     devDependencies:
       '@types/node': 18.15.13
       '@typescript-eslint/eslint-plugin': 5.59.0_chh3ljgpke5ydgcjpmkmu4hz5q
@@ -48,9 +48,9 @@ importers:
 
   packages/components:
     specifiers:
-      '@galaxy-ui/utils': workspace:^1.0.0
+      '@yammy-ui/utils': workspace:^1.0.0
     dependencies:
-      '@galaxy-ui/utils': link:../utils
+      '@yammy-ui/utils': link:../utils
 
 packages:
 

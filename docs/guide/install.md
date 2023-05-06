@@ -14,11 +14,11 @@ Galaxy UI 目前还处于快速开发迭代中。
 推荐使用包管理器 (NPM/Yarn/pnpm) 安装，它能更好地和vite/webpack等打包工具配合使用。
 ```shell
 # npm
-npm install galaxy-ui -S
+npm install yammy-ui -S
 
 # yarn
-yarn add galaxy-ui
+yarn add yammy-ui
 
 # pnpm 
-pnpm add galaxy-ui
+pnpm add yammy-ui
 ```

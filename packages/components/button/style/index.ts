@@ -1,1 +1,1 @@
-import "@galaxy-ui/theme-chalk/src/button.scss";
+import "@yammy-ui/theme-chalk/src/button.scss";

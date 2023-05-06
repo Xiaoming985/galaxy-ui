@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "Galaxy-UI"
+  name: "yammy-ui"
   text: "Vue3组件库"
   tagline: 基于Vue3,简洁高效的组件库
   # image:
   #   src: /images/vite.svg
-  #   alt: galaxy-ui
+  #   alt: yammy-ui
   actions:
     - theme: brand
       text: Get Started
       link: /guide/install.md
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Xiaoming985/galaxy-ui
+      link: https://github.com/Xiaoming985/yammy-ui
 
 features:
   - title: Vue3

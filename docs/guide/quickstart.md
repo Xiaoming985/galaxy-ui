@@ -8,8 +8,8 @@
 // main.ts or main.js
 import { createApp } from 'vue';
 import App from './App.vue';
-import GalaxyUI from 'galaxy-ui';
-import 'galaxy-ui/es/style.css';
+import GalaxyUI from 'yammy-ui';
+import 'yammy-ui/es/style.css';
 
 const app = createApp(App);
 app.use(GalaxyUI).mount('#app');
@@ -19,8 +19,8 @@ app.use(GalaxyUI).mount('#app');
 // main.ts or main.js
 import { createApp } from "vue";
 import App from "./App.vue";
-import { GaButton } from "galaxy-ui";
-import 'galaxy-ui/es/style.css';
+import { GaButton } from "yammy-ui";
+import 'yammy-ui/es/style.css';
 
 const app = createApp(App);
 app.use(GaButton).mount('#app');

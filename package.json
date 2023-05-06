@@ -1,5 +1,5 @@
 {
-  "name": "galaxy-ui",
+  "name": "yammy-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,7 +34,7 @@
     "vue-tsc": "^1.2.0"
   },
   "dependencies": {
-    "@galaxy-ui/components": "workspace:^1.0.0",
-    "@galaxy-ui/theme-chalk": "workspace:^1.0.0"
+    "@yammy-ui/components": "workspace:^1.0.0",
+    "@yammy-ui/theme-chalk": "workspace:^1.0.0"
   }
 }

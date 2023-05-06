@@ -1,1 +1,1 @@
-import "@galaxy-ui/theme-chalk/src/icon.scss";
+import "@yammy-ui/theme-chalk/src/icon.scss";

@@ -1,5 +1,5 @@
 {
-  "name": "@galaxy-ui/components",
+  "name": "@yammy-ui/components",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -12,12 +12,12 @@
     "build": "vite build" 
   },
   "keywords": [
-    "galaxy-ui",
+    "yammy-ui",
     "vue3组件库"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@galaxy-ui/utils": "workspace:^1.0.0"
+    "@yammy-ui/utils": "workspace:^1.0.0"
   }
 }

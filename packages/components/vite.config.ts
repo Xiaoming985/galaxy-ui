@@ -43,7 +43,7 @@ export default defineConfig({
     lib: {
       entry: "./index.ts",
       formats: ["es", "cjs"],
-      name: "galaxy-ui",
+      name: "yammy-ui",
     },
   },
   plugins: [
