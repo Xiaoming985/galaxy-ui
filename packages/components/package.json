@@ -16,7 +16,7 @@
     "vue3组件库"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@yammy-ui/utils": "workspace:^1.0.0"
   }

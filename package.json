@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "xiaoming985",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.13",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
