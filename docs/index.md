@@ -3,19 +3,19 @@
 layout: home
 
 hero:
-  name: "yammy-ui"
+  name: "yummy-ui"
   text: "Vue3组件库"
   tagline: 基于Vue3,简洁高效的组件库
   # image:
   #   src: /images/vite.svg
-  #   alt: yammy-ui
+  #   alt: yummy-ui
   actions:
     - theme: brand
       text: Get Started
       link: /guide/install.md
     - theme: alt
       text: View on GitHub
-      link: https://github.com/Xiaoming985/yammy-ui
+      link: https://github.com/Xiaoming985/yummy-ui
 
 features:
   - title: Vue3

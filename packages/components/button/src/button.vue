@@ -1,13 +1,13 @@
 <template>
   <button
-    class="yam-button"
+    class="yum-button"
     :class="classList"
     :type="nativeType"
     :autofocus="autoFocus"
     :disabled="disabled || loading"
     @click="handlerClick"
   >
-    <i v-if="props.loading" class="yam-icon-loading"></i>
+    <i v-if="props.loading" class="yum-icon-loading"></i>
     <i v-if="props.icon && !props.loading" :class="props.icon"></i>
     <slot />
   </button>
@@ -15,7 +15,7 @@
 
 <script lang="ts">
 export default {
-  name: "YamButton",
+  name: "YumButton",
 };
 </script>
 
@@ -29,8 +29,8 @@ const classList = computed(() => {
   const { type, size, round, plain, circle, disabled, loading } = props;
   return [
     {
-      [`yam-button--${type}`]: type,
-      [`yam-button--${size}`]: size,
+      [`yum-button--${type}`]: type,
+      [`yum-button--${size}`]: size,
       ["is-disabled"]: disabled,
       ["is-loading"]: loading,
       ["is-round"]: round,

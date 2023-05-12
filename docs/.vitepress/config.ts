@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "yammy-ui",
+  title: "yummy-ui",
   description: "vue3组件库",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -42,7 +42,7 @@ export default defineConfig({
 
     socialLinks: [
       // { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-      { icon: 'github', link: 'https://github.com/Xiaoming985/yammy-ui' }
+      { icon: 'github', link: 'https://github.com/Xiaoming985/yummy-ui' }
     ],
 
     lastUpdatedText: '最近更新时间',

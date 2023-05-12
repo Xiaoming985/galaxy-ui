@@ -1,1 +1,1 @@
-import "@yammy-ui/theme-chalk/src/button.scss";
+import "@yummy-ui/theme-chalk/src/button.scss";

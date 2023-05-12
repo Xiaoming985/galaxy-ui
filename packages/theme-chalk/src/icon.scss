@@ -2,7 +2,7 @@
 @use 'common/var' as *;
 
 @font-face {
-  font-family: "yam-icon"; /* Project id 2637025 */
+  font-family: "yum-icon"; /* Project id 2637025 */
   src: 
        url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARcAAsAAAAACOwAAAQPAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDHAqFGIRhATYCJAMQCwoABCAFhGcHSBvpB8gOJUGRwADgIQFgBNUYuvf/AQDF6IDGR8UTGQHYsqtwFb7Ko2IjMv+56a+YhT8LqwVqKmn4CRQPv+Jhc3g9TdxOIgbZqceJ3Xar/M/9fF75e/Z0cVfhFtXYZUU7s2EV0HCUP6qJ/vmA+B/iNVzGawRqzcnnuFNe2wp8r2isA5Gc6Z1BVBpXKo4G7pxNqUBDtbGy6alFfAQupFeObwAfvL+P/5LDnaQi06+ye1KmAA++yb8fdxJWBCB/5XQIaHdCBTKmFuaIs2rfAacgPsVJbVHU2QpAflct8Uv+bfT78ZUVrNiUrtrQ6fqPl4hKuq4ekZa0+cDklizSjyIuwe/jNokQyt7VaAF8AyAmgdS/oVpW2dBYX99gPKInwtm5oqIteMpyFoDrc9YLDg4357usYR173KtZglt3CiG72jwtZ4VzXl5vLpjPt+6O0JC2XW2hQ/U17fUM59qo2y2Tp9rczR6qtnz5IthsVlE02+3dltaE2MSENpsNs3aIImZut9uf2LfTEtr+xtNi/2Q3i59Fq+2jDQiFbbuEqQDgz2La9wYNnxSez3HMEPLhjvCyivFt8e0XxNbg4LMvWkqoR/RyQCuuCVehU5rPap9dli7SWXtG4reN4/ZFro7crmTCezv/4WIxttrvyhn7OG4bEUDaUtd1sopFrD2AaNtBRO8o8awv2t4K2cspVwZG7AMLMmkhSRbVmUjhunqxe5l6srCQdGlQ9kt7yPl5skfa/wGJkTgUx3v3Sz8UfOHmP+eJ8339Y2Xx9ZI3kvp2Sd2betheB9/Auvgytq//PAGc23Jmidll61K9i31El19XILGQAPd/z8ro788wmmIXMWYMVGSRpZF3envb0KFTEaV1TaklW76ukjfJqMZBEKMrysGajciAI2UzwADg5VW+7ZTOkIXikG+ST/N9p5w/Z5fGB5eTA365/93rHtrYz1mdA1Y2l795uSz7T5brLYCXlRJckFIerdKSkeLimDv3WowknNGPkabVwhCGtsYoYWiLIKnSB1m1AVwhTUCFOgtQqdoq1JpUdnadNgZOotRgxEaA0OwcJI2+QNbsOa6QRKjQ6TtUarYEtfbC53J1RoIp4RGNkQIOTUAVo9exZgxP0NpEVNqMuBENzQtKL9KOeJMKhWASJU+nKpAO8X0cYhrlkjFmIcvrtbAc7oiRRqOHBl4/jBhMKTE2ZMtkbNGPUIxeC0rwEBqGKEBDJkAqDD0d1qnGJtC0EpFoM4QzQtOar2iYZG2H8ExStDiUhCJvgKvQ6Ro1XMjVTEZxkmEYC2Lx9FwAKl+aB9EYcT3IULxtGMLAKMoOUYNsMtyKbaqjpjVob+8c1NKfWiJFjhIVqq70tEKl47xMiOYZZSKr0mhc7RhGPAAA') format('woff2'),
        url('iconfont.woff?t=1683537281682') format('woff'),
@@ -10,21 +10,21 @@
 }
 
 [class^='#{$namespace}-icon-'] {
-  font-family: "yam-icon" !important;
+  font-family: "yum-icon" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.yam-icon-loading:before {
+.yum-icon-loading:before {
   content: "\e676";
 }
 
-.yam-icon-search-fill:before {
+.yum-icon-search-fill:before {
   content: "\e7a2";
 }
 
-.yam-icon-filter:before {
+.yum-icon-filter:before {
   content: "\e630";
 }

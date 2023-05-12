@@ -1,7 +1,7 @@
 import button from "./src/button.vue";
 
-import { withInstall } from "@yammy-ui/utils/withInstall";
+import { withInstall } from "@yummy-ui/utils/withInstall";
 
-export const YamButton = withInstall(button);
+export const YumButton = withInstall(button);
 
-export default YamButton;
+export default YumButton;

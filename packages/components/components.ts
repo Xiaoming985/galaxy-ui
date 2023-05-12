@@ -1,2 +1,2 @@
-export { YamIcon } from "./icon";
-export { YamButton } from "./button";
+export { YumIcon } from "./icon";
+export { YumButton } from "./button";
