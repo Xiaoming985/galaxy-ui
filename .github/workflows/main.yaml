@@ -18,12 +18,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
+          node-version: 16
 
       - name: Install 🔧
         run: pnpm install
       
       - name: Build 🏗️
         run: pnpm run docs:build
+        # env:
+        #   NODE_ENV: production
 
       # 生成静态文件
       # - name: Build
