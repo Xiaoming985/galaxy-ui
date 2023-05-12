@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 16
 
-      # 安装pnpm
+      # 设置pnpm环境
       - name: Setup PNPM
         uses: pnpm/action-setup@v2
         with:
@@ -48,7 +48,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
           publish_dir: docs/.vitepress/dist # vitepress 生成的静态文件存放的地方
 
 
