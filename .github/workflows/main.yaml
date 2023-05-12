@@ -31,9 +31,11 @@ jobs:
         with:
           version: 7.18.1
 
+      # 安装依赖
       - name: Install 🔧
         run: pnpm install
       
+      # 打包
       - name: Build 🏗️
         run: pnpm run docs:build
         # env:
