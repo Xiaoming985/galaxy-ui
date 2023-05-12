@@ -26,8 +26,10 @@ jobs:
           node-version: 16
 
       # 安装pnpm
-      - name: Install PNPM
-        run: npm install -g pnpm
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.18.1
 
       - name: Install 🔧
         run: pnpm install
