@@ -15,9 +15,14 @@ jobs:
     steps:
       # 拉取代码
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
+
+      # 设置Node环境
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
           node-version: 16
 
       - name: Install 🔧
