@@ -1,9 +1,11 @@
 @use 'config' as *;
+@use 'function' as *;
+
 @forward 'config';
+@forward 'function';
 
-/* BEM
- -------------------------- */
 
+/* BEM */
 /* 拼接命名空间 */
 @mixin b($block) {
   $B: $namespace + '-' + $block !global;
@@ -14,9 +16,31 @@
 }
 
 @mixin e($element) {
-  @at-root {
-    #{& + $element-separator + $element} {
-      @content;
+  $E: $element !global;
+  $selector: &;
+  $currentSelector: '';
+  @each $unit in $element {
+    $currentSelector: #{$currentSelector +
+      '.' +
+      $B +
+      $element-separator +
+      $unit +
+      ','};
+  }
+  
+  @if hitAllSpecialNestRule($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
     }
   }
 }

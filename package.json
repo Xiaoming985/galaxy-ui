@@ -12,6 +12,9 @@
     "docs:serve": "vitepress serve docs",
     "docs:preview": "vitepress preview docs"
   },
+  "files": [
+    "build"
+  ],
   "keywords": [],
   "author": "xiaoming985",
   "license": "MIT",
@@ -34,7 +37,7 @@
     "vue-tsc": "^1.2.0"
   },
   "dependencies": {
-    "@yummy-ui/components": "workspace:^1.0.0",
-    "@yummy-ui/theme-chalk": "workspace:^1.0.0"
+    "@yummy-ui/components": "workspace:^0.0.1",
+    "@yummy-ui/theme-chalk": "workspace:^0.0.1"
   }
 }

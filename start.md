@@ -255,3 +255,5 @@ npx vitepress init
 
 
 ### 发布npm包
+- package.json 中 files 属性，用于指定上传到npm的目录/文件
+- .npmignore文件也可用于指定忽略上传的文件

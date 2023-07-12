@@ -1,5 +1,5 @@
 <template>
-  <i :class="`tas-icon-${name}`"></i>
+  <i :class="`yum-icon-${name}`"></i>
 </template>
 
 <script lang="ts">
@@ -17,3 +17,5 @@ const props = defineProps({
   },
 });
 </script>
+
+<style lang="scss" scoped></style>

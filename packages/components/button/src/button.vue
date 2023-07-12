@@ -44,4 +44,8 @@ function handlerClick(evt: MouseEvent): void {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss" scoped>
+i {
+  margin-right: 5px;
+}
+</style>
