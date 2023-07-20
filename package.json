@@ -1,6 +1,6 @@
 {
   "name": "yumyum-ui",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -37,7 +37,7 @@
     "vue-tsc": "^1.2.0"
   },
   "dependencies": {
-    "@yumyum-ui/components": "workspace:^0.0.1",
-    "@yumyum-ui/theme-chalk": "workspace:^0.0.1"
+    "@yumyum-ui/components": "workspace:^0.0.3",
+    "@yumyum-ui/theme-chalk": "workspace:^0.0.3"
   }
 }

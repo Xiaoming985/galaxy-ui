@@ -22,3 +22,15 @@ yarn add yumyum-ui
 # pnpm 
 pnpm add yumyum-ui
 ```
+
+### 全局引用
+```js
+// main.js
+import { createApp } from 'vue'
+import './style.css'
+import App from './App.vue'
+import YumyumUI from 'yumyum-ui'
+import 'yumyum-ui/es/style.css'
+
+createApp(App).use(YumyumUI).mount('#app')
+```

@@ -257,3 +257,47 @@ npx vitepress init
 ### 发布npm包
 - package.json 中 files 属性，用于指定上传到npm的目录/文件
 - .npmignore文件也可用于指定忽略上传的文件
+- pnpm run build:components 执行成功后会在根目录下生成build目录
+- cd build
+- npm init 生成package.json文件，并修改（版本号等），另外还可手动添加README.md，有助于npm展示简介
+- npm publish
+```json
+{
+  "name": "yumyum-ui",
+  "version": "0.0.1",
+  "description": "A high quality UI Toolkit built on Vue.js3+.",
+  "main": "lib/components/index.js",
+  "module": "es/components/index.js",
+  "exports": {
+    ".": {
+      "import": "./es/components/index.js",
+      "require": "./lib/components/index.js"
+    },
+    "./*": "./*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaoming985/yumyum-ui"
+  },
+  "homepage": "https://xiaoming985.github.io/yumyum-ui",
+  "bugs": {
+    "url": "https://github.com/xiaoming985/yumyum-ui/issues"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "yumyum-ui",
+    "vue3组件库",
+    "components",
+    "vue ui library",
+    "yumyumui",
+    "YumyumUI",
+    "vue"
+  ],
+  "typings": "lib/index.d.ts",
+  "author": "xiaoming985",
+  "license": "MIT"
+}
+```
