@@ -1,1 +1,1 @@
-import "@yummy-ui/theme-chalk/src/icon.scss";
+import "@yumyum-ui/theme-chalk/src/icon.scss";

@@ -8,7 +8,9 @@
     <yum-button type="warning">警告按钮</yum-button>
     <yum-button type="danger">危险按钮</yum-button>
     <yum-button type="primary" loading>loading...</yum-button>
-    <yum-button type="success" icon="yum-icon-selected">带图标按钮</yum-button>
+    <yum-button type="success" icon="yum-icon-check_circle">
+      带图标按钮
+    </yum-button>
     <div>
       <yum-icon name="loading" />
       <i class="yum-icon-loading"></i>

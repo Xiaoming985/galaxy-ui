@@ -1,5 +1,5 @@
 {
-  "name": "@yummy-ui/components",
+  "name": "@yumyum-ui/components",
   "version": "0.0.1",
   "description": "",
   "main": "index.ts",
@@ -12,12 +12,12 @@
     "build": "vite build" 
   },
   "keywords": [
-    "yummy-ui",
+    "yumyum-ui",
     "vue3组件库"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@yummy-ui/utils": "workspace:^0.0.1"
+    "@yumyum-ui/utils": "workspace:^0.0.1"
   }
 }

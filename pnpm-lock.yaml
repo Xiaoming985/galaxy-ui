@@ -8,8 +8,8 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.59.0
       '@typescript-eslint/parser': ^5.59.0
       '@vitejs/plugin-vue': ^4.1.0
-      '@yummy-ui/components': workspace:^0.0.1
-      '@yummy-ui/theme-chalk': workspace:^0.0.1
+      '@yumyum-ui/components': workspace:^0.0.1
+      '@yumyum-ui/theme-chalk': workspace:^0.0.1
       eslint: ^8.39.0
       eslint-config-prettier: ^8.8.0
       eslint-plugin-prettier: ^4.2.1
@@ -23,8 +23,8 @@ importers:
       vue: ^3.2.36
       vue-tsc: ^1.2.0
     dependencies:
-      '@yummy-ui/components': link:packages/components
-      '@yummy-ui/theme-chalk': link:packages/theme-chalk
+      '@yumyum-ui/components': link:packages/components
+      '@yumyum-ui/theme-chalk': link:packages/theme-chalk
     devDependencies:
       '@types/node': 18.16.8
       '@typescript-eslint/eslint-plugin': 5.59.5_zaj6dsh3leplki3sfxgbx2w2za
@@ -48,9 +48,9 @@ importers:
 
   packages/components:
     specifiers:
-      '@yummy-ui/utils': workspace:^0.0.1
+      '@yumyum-ui/utils': workspace:^0.0.1
     dependencies:
-      '@yummy-ui/utils': link:../utils
+      '@yumyum-ui/utils': link:../utils
 
   packages/theme-chalk:
     specifiers: {}

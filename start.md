@@ -16,9 +16,9 @@ npm install -g pnpm
 
 ### 初始化项目
 ```
-mkdir yummy-ui
-cd yummy-ui
-pnpm init # @yummy-ui 为组织名，发布npm包时，需要新建一个组织
+mkdir yumyum-ui
+cd yumyum-ui
+pnpm init # @yumyum-ui 为组织名，发布npm包时，需要新建一个组织
 ```
 
 ### 新建.npmrc文件
@@ -44,17 +44,17 @@ pnpm install vite @vitejs/plugin-vue vue-tsc -D
 ### packages目录下新建utils目录
 ```
 pnpm init
-# 执行完成后，修改该目录下的package.json        =>       "name": "@yummy-ui/utils"
+# 执行完成后，修改该目录下的package.json        =>       "name": "@yumyum-ui/utils"
 ```
 
 ### packages目录下新建components目录
 ```
 pnpm init
-# 执行完成后，修改该目录下的package.json        =>       "name": "@yummy-ui/components"
+# 执行完成后，修改该目录下的package.json        =>       "name": "@yumyum-ui/components"
 
-pnpm install @yummy-ui/utils 
-# 在components中引入utils，执行完成后会看到"dependencies": {"@yummy-ui/utils": "workspace:^1.0.0"}
-# 自动构建了软链接指向了utils目录，注意组织名（@yummy-ui）不重复，否则可能会从npm库中下了一个同名的包
+pnpm install @yumyum-ui/utils 
+# 在components中引入utils，执行完成后会看到"dependencies": {"@yumyum-ui/utils": "workspace:^1.0.0"}
+# 自动构建了软链接指向了utils目录，注意组织名（@yumyum-ui）不重复，否则可能会从npm库中下了一个同名的包
 ```
 
 ### 使用vite打包components
@@ -104,7 +104,7 @@ export default defineConfig(
       lib: {
         entry: './index.ts',
         formats: ['es', 'cjs'],
-        name: 'yummy-ui'
+        name: 'yumyum-ui'
       }
     },
     plugins: [
@@ -226,7 +226,7 @@ npx vitepress init
 │  ./docs
 │
 ◇  Site title:
-│  yummy-ui
+│  yumyum-ui
 │
 ◇  Site description:
 │  vue3组件库
@@ -249,7 +249,7 @@ npx vitepress init
 ### theme-chalk
 - 新建packages/theme-chalk目录
 - 在packages/theme-chalk下执行：pnpm init
-- 修改该目录下的package.json         =>        "name": "@yummy-ui/theme-chalk"
+- 修改该目录下的package.json         =>        "name": "@yumyum-ui/theme-chalk"
 
 ### 编写组件
 
