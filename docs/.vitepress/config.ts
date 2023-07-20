@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/yumyum-ui/',
-  title: "yumyum-ui",
+  title: "YumyumUI",
   description: "vue3组件库",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

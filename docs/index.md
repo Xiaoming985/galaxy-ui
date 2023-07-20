@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "yumyum-ui"
+  name: "YumyumUI"
   text: "Vue3组件库"
   tagline: 基于Vue3,简洁高效的组件库
   # image:
