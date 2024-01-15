@@ -1,10 +1,11 @@
-import type { Plugin } from "vue";
+import type { App, Directive } from "vue";
+import type { SFCInstallWithContext, SFCWithInstall } from './typescript';
 
 export const withInstall = <T, E extends Record<string, any>>(
   main: T,
   extra?: E
 ): T => {
-  (main as SFCWithInstall<T>).install = (app): void => {
+  (main as SFCWithInstall<T>).install = (app: App): void => {
     for (const comp of [main, ...Object.values(extra ?? {})]) {
       app.component(comp.name, comp);
     }
@@ -18,4 +19,11 @@ export const withInstall = <T, E extends Record<string, any>>(
   return main as SFCWithInstall<T> & E;
 };
 
-export type SFCWithInstall<T> = T & Plugin;
+export const withInstallFunction = <T>(fn: T, name: string) => {
+  ;(fn as SFCWithInstall<T>).install = (app: App) => {
+    ;(fn as SFCInstallWithContext<T>)._context = app._context
+    app.config.globalProperties[name] = fn
+  }
+
+  return fn as SFCInstallWithContext<T>
+}

@@ -20,7 +20,6 @@ export default {
 </script>
 
 <script lang="ts" setup>
-import "../style/";
 import { computed } from "vue";
 import { Props, Emits } from "./button";
 const props = defineProps(Props);

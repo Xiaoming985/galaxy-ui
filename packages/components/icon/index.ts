@@ -1,7 +1,7 @@
-import icon from "./src/icon.vue";
-
 import { withInstall } from "@yumyum-ui/utils";
 
-export const YumIcon = withInstall(icon);
+import Icon from "./src/icon.vue";
+
+export const YumIcon = withInstall(Icon);
 
 export default YumIcon;

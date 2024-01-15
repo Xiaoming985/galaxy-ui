@@ -1,7 +1,7 @@
-import button from "./src/button.vue";
-
 import { withInstall } from "@yumyum-ui/utils";
 
-export const YumButton = withInstall(button);
+import Button from "./src/button.vue";
+
+export const YumButton = withInstall(Button);
 
 export default YumButton;

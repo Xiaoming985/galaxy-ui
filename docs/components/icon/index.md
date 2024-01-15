@@ -137,7 +137,7 @@
   <li>
     <span>
       <i class="yum-icon-check_circle"></i>
-      <span>yum-icon-selected</span>
+      <span>yum-icon-check_circle</span>
     </span>
   </li>
   <li>
@@ -245,13 +245,13 @@
   <li>
     <span>
       <i class="yum-icon-close"></i>
-      <span>yum-icon-delete</span>
+      <span>yum-icon-close</span>
     </span>
   </li>
   <li>
     <span>
       <i class="yum-icon-check"></i>
-      <span>yum-icon-Selected</span>
+      <span>yum-icon-check</span>
     </span>
   </li>
   <li>

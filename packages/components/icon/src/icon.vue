@@ -9,7 +9,6 @@ export default {
 </script>
 
 <script setup lang="ts">
-import "../style/";
 const props = defineProps({
   name: {
     type: String,
