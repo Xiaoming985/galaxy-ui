@@ -7,7 +7,8 @@
 }
 
 @include b(message) {
-  width: fit-content;
+  // width: fit-content;
+  min-width: 300px;
   max-width: calc(100% - 32px);
   box-sizing: border-box;
   border-radius: getCssVar('border-radius-base');
@@ -85,10 +86,10 @@
   }
 
   & .#{$namespace}-message__close-btn {
-    // position: absolute;
-    // top: 50%;
-    // right: 19px;
-    // transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
     cursor: pointer;
     color: getCssVar('message', 'close-icon-color');
     font-size: getCssVar('message', 'close-size');

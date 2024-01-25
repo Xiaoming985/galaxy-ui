@@ -28,7 +28,8 @@ export default defineConfig({
           items: [
             { text: 'Button 按钮', link: '/components/button/' },
             // { text: 'Grid 栅格', link: '/components/grid/' },
-            { text: 'Icon 图标', link: '/components/icon/' }
+            { text: 'Icon 图标', link: '/components/icon/' },
+            { text: 'Message 消息提示', link: '/components/message/' },
           ]
         },
         {

@@ -51,7 +51,7 @@ export const MessageProps = {
   },
   center: {
     type: Boolean,
-    default: true
+    default: false
   }
 };
 
