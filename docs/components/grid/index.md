@@ -27,43 +27,43 @@
 <div class="example">
   <yum-row>
     <yum-col :span="24">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row>
     <yum-col :span="12">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col :span="12">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row tag="div">
     <yum-col tag="span" :span="12">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row tag="div" :gutter="20" justify="end">
     <yum-col tag="span" :span="6">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
@@ -77,43 +77,43 @@
 <template>
   <yum-row>
     <yum-col :span="24">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row>
     <yum-col :span="12">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col :span="12">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row tag="div">
     <yum-col tag="span" :span="12">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
   <br />
   <yum-row tag="div" :gutter="20" justify="end">
     <yum-col tag="span" :span="6">
-      <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
     <yum-col tag="span" :span="6">
-      <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+      <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
     </yum-col>
   </yum-row>
   <br />
@@ -126,16 +126,16 @@
 <div class="example">
     <yum-row tag="div" :gutter="40" justify="end">
       <yum-col tag="span" :span="6">
-        <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
     </yum-row>
 </div>
@@ -148,16 +148,16 @@
   <div>
     <yum-row tag="div" :gutter="40" justify="end">
       <yum-col tag="span" :span="6">
-        <div style="background-color: #c8c8e0; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #ADC8FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
       <yum-col tag="span" :span="6">
-        <div style="background-color: #f4f4f9; height: 35px; border-radius: 8px"></div>
+        <div style="background-color: #D6E4FF; height: 35px; border-radius: 8px"></div>
       </yum-col>
     </yum-row>
   </div>

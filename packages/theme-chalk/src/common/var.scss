@@ -18,19 +18,19 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #9090c0,
+      'base': #3366FF,
     ),
     'success': (
-      'base': #67c23a,
+      'base': #89B505,
     ),
     'warning': (
-      'base': #e6a23c,
+      'base': #FFB22D,
     ),
     'danger': (
-      'base': #f56c6c,
+      'base': #FF422D,
     ),
     'error': (
-      'base': #f56c6c,
+      'base': #FF422D,
     ),
     'info': (
       'base': #909399,
@@ -1115,7 +1115,7 @@ $rate: map.merge(
     // seems not be used, to be removed
     // 'icon-color': getCssVar('text-color-placeholder),
     'void-color': getCssVar('border-color', 'darker'),
-    'fill-color': #f7ba2a,
+    'fill-color': getCssVar('color-warning'),
     'disabled-void-color': getCssVar('fill-color'),
     'text-color': getCssVar('text-color', 'primary'),
   ),

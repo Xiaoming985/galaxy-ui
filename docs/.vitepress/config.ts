@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/' },
-      { text: '组件', link: '/components/grid/' }
+      { text: '组件', link: '/components/grid/', activeMatch: '/components/' }
     ],
 
     sidebar: {

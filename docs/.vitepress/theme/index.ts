@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme';
 import YumyumUI from '@yumyum-ui/components';
 import '@yumyum-ui/theme-chalk/src/index.scss';
+import "./style/var.css"
 
 export default {
   ...DefaultTheme,
