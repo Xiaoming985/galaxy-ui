@@ -1,6 +1,6 @@
 {
   "name": "@yumyum-ui/components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.ts",
   "module": "index.ts",
@@ -18,6 +18,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@yumyum-ui/utils": "workspace:^0.0.3"
+    "@yumyum-ui/utils": "workspace:^0.0.4"
   }
 }

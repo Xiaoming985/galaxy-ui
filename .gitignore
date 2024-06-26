@@ -5,6 +5,7 @@ dist/
 
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 
 # packages/components 打包输出的内容
 build/
