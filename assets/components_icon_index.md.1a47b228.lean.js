@@ -1,0 +1,1 @@
+import{_ as n,c as i,o as s,M as a}from"./chunks/framework.f5c9e82e.js";const _=JSON.parse('{"title":"Icon图标","description":"","frontmatter":{},"headers":[],"relativePath":"components/icon/index.md"}'),p={name:"components/icon/index.md"},c=a("",4),l=[c];function o(u,m,y,e,t,r){return s(),i("div",null,l)}const h=n(p,[["render",o]]);export{_ as __pageData,h as default};
