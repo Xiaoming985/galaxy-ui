@@ -24,6 +24,25 @@ pnpm init # @yumyum-ui 为组织名，发布npm包时，需要新建一个组织
 ### 新建.npmrc文件
 
 ### 新建pnpm-workspace.yaml文件
+pnpm-workspace.yaml defines the root of the workspace and enables you to include / exclude directories from the workspace. 默认情况下，包含所有子目录。
+```yaml
+# pnpm-workspace.yaml
+packages:
+  # all packages in direct subdirs of packages/
+  - 'packages/*'
+  # all packages in subdirs of components/
+  - 'components/**'
+  # exclude packages that are inside test directories
+  - '!**/test/**'
+```
+即使使用了自定义目录位置通配符，根目录下的package目录也总是被包含.
+```yaml
+# 当前项目配置
+packages:
+  - packages/** # 存放所有组件
+  - docs # 文档
+  - examples # 使用案例
+```
 
 ### 新建packages、docs、examples目录
 

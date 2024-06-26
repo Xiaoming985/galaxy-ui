@@ -16,7 +16,7 @@
     "build"
   ],
   "keywords": [],
-  "author": "xiaoming985",
+  "author": "Xiaoming985",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.15.13",

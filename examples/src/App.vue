@@ -22,6 +22,17 @@
       <yum-button type="danger" @click="showMessage('error')">error message</yum-button>
       <yum-button type="info" @click="showMessage('closeable', true)">closeable message</yum-button>
     </div>
+    <yum-row tag="div" :gutter="20" style="margin-top: 10px;">
+      <yum-col tag="span" :span="8">
+        <div style="background-color: #595B83; height: 35px; border-radius: 8px"></div>
+      </yum-col>
+      <yum-col tag="span" :span="8">
+        <div style="background-color: #595B83; height: 35px; border-radius: 8px"></div>
+      </yum-col>
+      <yum-col tag="span" :span="8">
+        <div style="background-color: #595B83; height: 35px; border-radius: 8px"></div>
+      </yum-col>
+    </yum-row>
   </div>
 </template>
 

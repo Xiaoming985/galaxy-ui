@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/' },
-      { text: '组件', link: '/components/button/' }
+      { text: '组件', link: '/components/grid/' }
     ],
 
     sidebar: {
@@ -26,9 +26,9 @@ export default defineConfig({
         {
           text: '基本',
           items: [
-            { text: 'Button 按钮', link: '/components/button/' },
-            // { text: 'Grid 栅格', link: '/components/grid/' },
+            { text: 'Grid 栅格', link: '/components/grid/' },
             { text: 'Icon 图标', link: '/components/icon/' },
+            { text: 'Button 按钮', link: '/components/button/' },
             { text: 'Message 消息提示', link: '/components/message/' },
           ]
         },
@@ -51,7 +51,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023 Xiaoming985'
+      copyright: `Copyright © 2023-${new Date().getFullYear()} Xiaoming985`
     },
   }
 })
