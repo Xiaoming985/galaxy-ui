@@ -320,3 +320,61 @@ npx vitepress init
   "license": "MIT"
 }
 ```
+
+### github actions
+```yaml
+# .github/workflows/main.yaml
+# name 可以自定义
+name: Deploy GitHub Pages
+
+# 触发条件：在 push 到 main 分支后
+on:
+  push:
+    branches:
+      - main
+
+# 任务
+jobs:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      # 设置Node环境
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      # 设置pnpm环境
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7.18.1
+
+      # 安装依赖
+      - name: Install 🔧
+        run: pnpm install
+      
+      # 打包
+      - name: Build 🏗️
+        run: pnpm run docs:build
+        # env:
+        #   NODE_ENV: production
+
+      # 生成静态文件
+      # - name: Build
+      #   run: pnpm install && pnpm run docs:build
+
+      # 部署到 GitHub Pages
+      - name: Deploy to GH Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist # vitepress 生成的静态文件存放的地方
+```
